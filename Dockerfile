@@ -49,8 +49,8 @@ RUN ./configure --with-http_ssl_module --add-module=/src/nginx-rtmp-module-1.1.6
   make && \
   make install
 
-ADD nginx.conf /config/nginx.conf
-ADD static /static
+COPY nginx.conf /config/nginx.conf
+COPY static /static
 
 RUN chmod -R 777 /data
 
