@@ -1,7 +1,7 @@
 <?php
 error_log(json_encode($_POST));
 
-$url = '{{ .Env.webSiteRootURL }}plugin/Live/on_record_done.php';
+$url = '{webSiteRootURL}plugin/Live/on_record_done.php';
 
 //open connection
 $ch = curl_init();
