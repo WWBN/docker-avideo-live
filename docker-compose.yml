@@ -12,8 +12,6 @@ services:
       - NGINX_HTTPS_PORT
       - NGINX_RTMP_PORT
       - webSiteRootURL
-      - adaptive
-      - record
     volumes:
       - ./certs:/opt/certs
     networks:
