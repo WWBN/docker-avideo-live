@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  nginx-rtmp:
+    build: .
+    ports:
+      - {NGINX_RTMP_PORT}:1935
+      - {NGINX_HTTPS_PORT}:443
+    environment:
+      - NGINX_HTTPS_PORT
+      - NGINX_RTMP_PORT
+    volumes:
+      - ./certs:/opt/certs
+    networks:
+      yptlive:
+networks:
+  yptlive:

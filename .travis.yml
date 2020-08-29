@@ -1,0 +1,15 @@
+sudo: required
+
+language: bash
+services: docker
+
+env:
+  - DOCKER_IMAGE=nginx-rtmp
+
+script:
+  - docker build -t ${DOCKER_IMAGE} .
+
+after_script:
+  - docker images
+  - docker run -d -p {NGINX_RTMP_PORT}:1935 -p {NGINX_HTTPS_PORT}:443 -t ${DOCKER_IMAGE}
+  - docker ps -a
