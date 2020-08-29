@@ -1,8 +1,5 @@
 FROM ubuntu:trusty
 
-ARG webSiteRootURL
-ENV webSiteRootURL=$webSiteRootURL
-
 ENV DEBIAN_FRONTEND noninteractive
 ENV PATH $PATH:/usr/local/nginx/sbin
 
