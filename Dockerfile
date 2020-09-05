@@ -52,9 +52,9 @@ RUN ./configure --with-http_ssl_module --add-module=/src/nginx-rtmp-module-1.1.6
 ADD nginx.conf /config/nginx.conf
 ADD static /static
 
-RUN sed -i -e "s/{webSiteRootURL}/${webSiteRootURL}/g" /static/*.php
+# RUN sed -i -e "s/{webSiteRootURL}/${webSiteRootURL}/g" /static/*.php
 
-RUN sed -i -e "s/variables_order = \"GPCS\"/variables_order = \"GPCSE\"/g" /etc/php5/fpm/php.ini
+# RUN sed -i -e "s/variables_order = \"GPCS\"/variables_order = \"GPCSE\"/g" /etc/php5/fpm/php.ini
 
 RUN chmod -R 777 /data
 
