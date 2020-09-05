@@ -13,6 +13,7 @@ services:
       - webSiteRootURL
     volumes:
       - ./certs:/opt/certs
+      - ./static:/opt/static
     networks:
       yptlive:
 networks:

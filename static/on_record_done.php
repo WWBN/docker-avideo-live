@@ -1,7 +1,8 @@
 <?php
 error_log(json_encode($_POST));
 
-$url = $_ENV['webSiteRootURL'].'plugin/Live/on_record_done.php';
+require "/opt/static/conf.php";
+$url = $global['webSiteRootURL'].'plugin/Live/on_record_done.php';
 
 //open connection
 $ch = curl_init();

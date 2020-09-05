@@ -8,7 +8,7 @@ EXPOSE 80
 EXPOSE 443
 
 # create directories
-RUN mkdir /src /config /logs /data /static /data/hls /data/recorders
+RUN mkdir /src /config /logs /data /data/hls /data/recorders
 
 # update and upgrade packages
 RUN apt-get update && \
@@ -50,7 +50,7 @@ RUN ./configure --with-http_ssl_module --add-module=/src/nginx-rtmp-module-1.1.6
   make install
 
 ADD nginx.conf /config/nginx.conf
-ADD static /static
+#ADD static /static
 
 # RUN sed -i -e "s/{webSiteRootURL}/${webSiteRootURL}/g" /static/*.php
 

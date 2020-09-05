@@ -16,7 +16,10 @@
     }
   }
  */
-$streamerURL = '{webSiteRootURL}'; // change it to your streamer URL
+
+require "/opt/static/conf.php";
+
+$streamerURL = $global['webSiteRootURL']; // change it to your streamer URL
 
 $server_name = "localhost";
 $port = "8080";
