@@ -54,6 +54,8 @@ ADD static /static
 
 RUN sed -i -e "s/{webSiteRootURL}/${webSiteRootURL}/g" /static/*.php
 
+RUN sed -i -e "s/variables_order = \"GPCS\"/variables_order = \"GPCSE\"/g" /etc/php5/fpm/php.ini
+
 RUN chmod -R 777 /data
 
 WORKDIR /
