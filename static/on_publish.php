@@ -1,7 +1,7 @@
 <?php
 error_log(json_encode($_POST));
 
-$url = $_ENV['webSiteRootURL'].'plugin/Live/on_publish.php';
+$url = '{webSiteRootURL}plugin/Live/on_publish.php';
 
 //open connection
 $ch = curl_init();

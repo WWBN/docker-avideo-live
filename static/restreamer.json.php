@@ -12,7 +12,7 @@
  * make
  * make install
  */
-$streamerURL = $_ENV['webSiteRootURL']; // change it to your streamer URL
+$streamerURL = '{webSiteRootURL}'; // change it to your streamer URL
 // optional you can change the log file location here
 $logFileLocation = '/data/recorders/';
 

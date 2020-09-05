@@ -16,7 +16,7 @@
     }
   }
  */
-$streamerURL = $_ENV['webSiteRootURL']; // change it to your streamer URL
+$streamerURL = '{webSiteRootURL}'; // change it to your streamer URL
 
 $server_name = "localhost";
 $port = "8080";
