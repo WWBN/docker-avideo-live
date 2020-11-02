@@ -1,2 +1,2 @@
 <?php
-$global['webSiteRootURL'] = "https://demo.avideo.com/";
+$global['webSiteRootURL'] = getenv('webSiteRootURL');
