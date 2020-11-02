@@ -10,7 +10,7 @@ services:
     environment:
       - NGINX_HTTPS_PORT
       - NGINX_RTMP_PORT
-      - webSiteRootURL
+      - webSiteRootURL='https://demo.avideo.com/'
     volumes:
       - ./certs:/opt/certs
       - ./static:/opt/static
